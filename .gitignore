@@ -1,0 +1,8 @@
+*.sdf
+*.opensdf
+*.user
+*.suo
+/debug
+/GeneratedFiles
+/ipch
+Win32

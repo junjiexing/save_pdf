@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6D24E871-BE0D-3773-9433-0A161D200DF6}</ProjectGuid>
+    <RootNamespace>save_pdf</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>save_pdf</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>save_pdf</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">save_pdf</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">save_pdf</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtWebKitWidgets;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtQuick;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtMultimediaWidgets;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtOpenGL;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtPrintSupport;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtWebKit;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtQml;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtMultimedia;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtWidgets;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtNetwork;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtPositioning;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtSensors;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtGui;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtCore;release;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\mkspecs\win32-msvc2010;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWebKit;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtPrintSupport;$(QTDIR)\include\QtWebkitWidgets;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtSvg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_WEBKITWIDGETS_LIB;QT_QUICK_LIB;QT_MULTIMEDIAWIDGETS_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;QT_WEBKIT_LIB;QT_QML_LIB;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_SENSORS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;QT_SVG_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;gdi32.lib;user32.lib;qtmain.lib;$(QTDIR)\lib\Qt5WebKitWidgets.lib;$(QTDIR)\lib\Qt5Quick.lib;$(QTDIR)\lib\Qt5MultimediaWidgets.lib;$(QTDIR)\lib\Qt5OpenGL.lib;$(QTDIR)\lib\Qt5PrintSupport.lib;$(QTDIR)\lib\Qt5WebKit.lib;$(QTDIR)\lib\Qt5Qml.lib;$(QTDIR)\lib\Qt5Multimedia.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Network.lib;$(QTDIR)\lib\Qt5Positioning.lib;$(QTDIR)\lib\Qt5Sensors.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Core.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Network.lib;Qt5WebKit.lib;Qt5OpenGL.lib;Qt5PrintSupport.lib;Qt5WebkitWidgets.lib;Qt5Widgets.lib;Qt5Svg.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\save_pdf.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_NO_DEBUG;QT_WEBKITWIDGETS_LIB;QT_QUICK_LIB;QT_MULTIMEDIAWIDGETS_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;QT_WEBKIT_LIB;QT_QML_LIB;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_SENSORS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtWebKitWidgets;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtQuick;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtMultimediaWidgets;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtOpenGL;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtPrintSupport;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtWebKit;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtQml;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtMultimedia;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtWidgets;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtNetwork;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtPositioning;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtSensors;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtGui;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtCore;debug;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\mkspecs\win32-msvc2010;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWebKit;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtPrintSupport;$(QTDIR)\include\QtWebkitWidgets;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtSvg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_WEBKITWIDGETS_LIB;QT_QUICK_LIB;QT_MULTIMEDIAWIDGETS_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;QT_WEBKIT_LIB;QT_QML_LIB;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_SENSORS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_SVG_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;gdi32.lib;user32.lib;qtmaind.lib;$(QTDIR)\lib\Qt5WebKitWidgetsd.lib;$(QTDIR)\lib\Qt5Quickd.lib;$(QTDIR)\lib\Qt5MultimediaWidgetsd.lib;$(QTDIR)\lib\Qt5OpenGLd.lib;$(QTDIR)\lib\Qt5PrintSupportd.lib;$(QTDIR)\lib\Qt5WebKitd.lib;$(QTDIR)\lib\Qt5Qmld.lib;$(QTDIR)\lib\Qt5Multimediad.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Networkd.lib;$(QTDIR)\lib\Qt5Positioningd.lib;$(QTDIR)\lib\Qt5Sensorsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Cored.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Networkd.lib;Qt5WebKitd.lib;Qt5OpenGLd.lib;Qt5PrintSupportd.lib;Qt5WebkitWidgetsd.lib;Qt5Widgetsd.lib;Qt5Svgd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;D:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\save_pdf.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QT_WEBKITWIDGETS_LIB;QT_QUICK_LIB;QT_MULTIMEDIAWIDGETS_LIB;QT_OPENGL_LIB;QT_PRINTSUPPORT_LIB;QT_WEBKIT_LIB;QT_QML_LIB;QT_MULTIMEDIA_LIB;QT_WIDGETS_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_SENSORS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PageCap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PageCap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="PageCap.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="PageCap.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_NO_DEBUG -DQT_WEBKITWIDGETS_LIB -DQT_QUICK_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WEBKIT_LIB -DQT_QML_LIB -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB -DQT_POSITIONING_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_SVG_LIB  "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtWebKitWidgets" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtQuick" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtMultimediaWidgets" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtOpenGL" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtPrintSupport" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtWebKit" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtQml" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtMultimedia" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtWidgets" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtNetwork" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtPositioning" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtSensors" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtGui" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtCore" "-I.\release" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\mkspecs\win32-msvc2010" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWebkitWidgets" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSvg"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing PageCap.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath);%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQT_WEBKITWIDGETS_LIB -DQT_QUICK_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_OPENGL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WEBKIT_LIB -DQT_QML_LIB -DQT_MULTIMEDIA_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB -DQT_POSITIONING_LIB -DQT_SENSORS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SVG_LIB  "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtWebKitWidgets" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtQuick" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtMultimediaWidgets" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtOpenGL" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtPrintSupport" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtWebKit" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtQml" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtMultimedia" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtWidgets" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtNetwork" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtPositioning" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtSensors" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtGui" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\include\QtCore" "-I.\debug" "-ID:\Qt\Qt5.2.1\5.2.1\msvc2010_opengl\mkspecs\win32-msvc2010" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebKit" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtPrintSupport" "-I$(QTDIR)\include\QtWebkitWidgets" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtSvg"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing PageCap.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Qt5Version_x0020_Win32="msvc2010_opengl" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
