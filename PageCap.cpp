@@ -42,6 +42,7 @@ void PageCap::saveResult(bool ok)
         return;
     }
 
+	//设置打印成pdf和pdf保存路径
 	QPrinter printer(QPrinter::HighResolution);
 	printer.setOutputFormat(QPrinter::PdfFormat);
 	printer.setOutputFileName(m_fileName);
@@ -49,8 +50,11 @@ void PageCap::saveResult(bool ok)
 
 	auto frame = m_page.mainFrame();
 	QWebElement art_ele;
+	//找到所有的div
 	foreach (QWebElement element, frame->documentElement().findAll("div"))
 	{
+		//找到这些div中class属性为span8的
+		//这个就是图灵社区中显示文章的那个div，后面要打印他到pdf
 		if (element.attribute("class") == "span8")
 		{
 			art_ele = element;
@@ -71,11 +75,12 @@ void PageCap::saveResult(bool ok)
 	qreal scale = printer.width() / frame_width;
 
 	QPainter painter(&printer);
-	painter.scale(scale,scale);
+	painter.scale(scale,scale); //将页面放大到跟纸张大小一样（仅宽度一样）
 	for (int i = 0; i < frame_height * scale / pdf_height; ++i)
 	{
+		//打印一页
 		frame->documentElement().render(&painter,QRect(0,pdf_height / scale * i, pdf_height / scale * (i + 1),frame_width));
-		printer.newPage();
+		printer.newPage();	//新的一页
 	}
 
 	//将文章单独摘出来再打印一遍
@@ -83,6 +88,7 @@ void PageCap::saveResult(bool ok)
 	QRect geo = art_ele.geometry();
 	art_ele.render(&painter);
 
+	//over
 	painter.end();
 
     emit finished();
